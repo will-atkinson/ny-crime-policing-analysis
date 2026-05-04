@@ -54,3 +54,8 @@ street.csv
 outcomes.csv
 latest_outcomes.csv
 search.csv
+
+## Data Source & Licence
+This project uses publicly available UK Police crime data provided under the Open Government Licence.
+The data is used for demonstration and analytical purposes only.  
+Original data remains the property of the data provider.
