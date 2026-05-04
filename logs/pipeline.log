@@ -1,0 +1,30 @@
+2026-05-04 15:31:08 | INFO | __main__ | Starting pipeline
+2026-05-04 15:31:08 | INFO | src.io.load | Loading data
+2026-05-04 15:31:08 | INFO | src.io.load | Loaded street
+2026-05-04 15:31:08 | INFO | src.io.load | Loaded outcomes
+2026-05-04 15:31:08 | INFO | src.io.load | Loaded search
+2026-05-04 15:31:08 | INFO | src.io.load | Loading complete
+2026-05-04 15:31:08 | INFO | __main__ | Starting cleaning
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | Cleaning street
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | street rows before dedupe: 101106
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | street rows with crime_id: 75650
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | street rows without crime_id: 25456
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | street rows after dedupe: 99837
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | street rows dropped: 1269
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_street | Cleaning complete street rows: 99837
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_outcomes | Cleaning outcomes
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_outcomes | outcomes rows before dedupe: 111474
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_outcomes | outcomes rows after dedupe: 74662
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_outcomes | outcomes rows dropped: 36812
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_outcomes | Cleaning complete outcomes rows: 74662
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_search | Cleaning search
+2026-05-04 15:31:08 | INFO | src.cleaning.clean_search | Cleaning complete search rows: 960
+2026-05-04 15:31:08 | INFO | src.transform.build_latest_outcome | Building latest outcomes
+2026-05-04 15:31:08 | INFO | src.transform.build_latest_outcome | latest outcomes rows before dedupe: 74662
+2026-05-04 15:31:08 | INFO | src.transform.build_latest_outcome | latest outcomes rows after dedupe: 73171
+2026-05-04 15:31:08 | INFO | src.transform.build_latest_outcome | Latest outcomes rows: 73171
+2026-05-04 15:31:08 | INFO | __main__ | Starting export
+2026-05-04 15:31:09 | INFO | src.io.export | Saved street.csv
+2026-05-04 15:31:10 | INFO | src.io.export | Saved outcomes.csv
+2026-05-04 15:31:10 | INFO | src.io.export | Saved search.csv
+2026-05-04 15:31:10 | INFO | src.io.export | Saved latest_outcomes.csv
